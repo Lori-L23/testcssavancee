@@ -1,0 +1,263 @@
+/* Reset de style pour enlever les marges, les paddings et définir le modèle de boîte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: #333; /* Couleur de fond sombre */
+    color: white; /* Couleur du texte en blanc */
+    display: flex; /* Utilisation du modèle flexbox pour le conteneur */
+    justify-content: space-between; /* Espacement égal entre les éléments de la barre */
+    align-items: center; /* Alignement vertical centré des éléments */
+    padding: 10px 20px; /* Espacement intérieur de 10px en haut/bas et 20px à gauche/droite */
+    position: fixed; /* La barre de navigation reste en haut de la page même au défilement */
+    width: 100%; /* Largeur complète */
+    top: 0; /* Fixé au sommet */
+    z-index: 1000; /* Priorité d'affichage élevée */
+}
+
+/* Style des liens de navigation */
+.nav-links {
+    list-style: none; /* Enlever les puces de liste */
+    display: flex; /* Utilisation du modèle flexbox pour les liens */
+}
+
+.nav-links li {
+    margin: 0 10px; /* Marge horizontale entre chaque lien */
+}
+
+.nav-links a {
+    color: white; /* Couleur du texte en blanc */
+    text-decoration: none; /* Enlever la décoration de texte (soulignement) */
+    transition: color 0.3s; /* Transition de la couleur pour les effets de survol */
+}
+
+.nav-links a:hover {
+    color: #3498db; /* Changement de la couleur de texte au survol */
+}
+
+/* Style du logo */
+.logo {
+    font-size: 24px; /* Taille de la police pour le logo */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Style de la section héro */
+.hero {
+    background: url('https://cartes-virtuelles.joliecarte.com/bonne-annee/meilleurs-voeux.jpg') no-repeat center center/cover; /* Image de fond centrée et couverte */
+    height: 100vh; /* Hauteur de l'écran entier */
+    display: flex; /* Utilisation du modèle flexbox pour le conteneur */
+    justify-content: center; /* Centrage horizontal des éléments */
+    align-items: center; /* Centrage vertical des éléments */
+    text-align: center; /* Texte centré */
+    color: white; /* Couleur du texte en blanc */
+    padding: 0 20px; /* Espacement intérieur horizontal */
+}
+
+.hero-content {
+    animation: fadeIn 2s ease-in; /* Animation de fondu pour le contenu de la section héro */
+}
+
+.hero h1 {
+    font-size: 48px; /* Taille de la police pour le titre */
+    margin-bottom: 20px; /* Marge inférieure pour espacement */
+}
+
+.hero p {
+    font-size: 24px; /* Taille de la police pour le paragraphe */
+    margin-bottom: 20px; /* Marge inférieure pour espacement */
+}
+
+img {
+   
+    object-fit: cover; 
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+ } 
+
+
+/* Style pour chaque image */
+.image-container img {
+    width:400px; /* Largeur à 400% de la colonne */
+    height: 400px; /* Taille fixe pour la hauteur */
+    object-fit: cover; /* Assure une bonne proportion des images */
+    border: 2px solid #ccc; /* Bordure optionnelle */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1); /* Ombre optionnelle */
+    /* animation: bounce 2s infinite; Appliquer l'animation */
+}
+
+
+.Bouquet{
+    display: flex;
+    justify-content: space-between;
+}
+/* Style des boutons */
+.btn {
+    background-color: #f46b30; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte en blanc */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    text-decoration: none; /* Enlever la décoration de texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    transition: background-color 0.3s, transform 0.3s; /* Transition de la couleur de fond et de la transformation */
+    cursor: pointer; /* Curseur en pointeur */
+    /* animation: bounce 2s infinite; Appliquer l'animation */
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Changement de la couleur de fond au survol */
+    transform: scale(1.1); /* Agrandissement léger du bouton au survol */
+}
+/* Définir les étapes clés de l'animation */
+/* @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Position de départ */
+    /* }
+    40% {
+        transform: translateY(-30px); /* Monter */
+    /* }
+    60% {
+        transform: translateY(-15px); /* Redescendre partiellement */
+    /* } */
+/* } */ */ */ */
+.product-card{
+    margin-bottom: 50px;
+    transition: all 0.5s ease;
+}
+
+/* Style des sections */
+section {
+    padding: 60px 20px; /* Espacement intérieur des sections */
+    text-align: center; /* Texte centré */
+}
+
+.products, .about, .contact {
+    max-width: 1200px; /* Largeur maximale pour les sections */
+    margin: 0 auto; /* Centrage des sections */
+}
+.about{
+    background: url('https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1684369950/vendor/7927/catalog/product/2/0/20220126072646_file_61f0f7b6415e6_61f0f8dd5c91e.jpg') no-repeat center center/cover; /* Image de fond centrée et couverte */
+    height: 100vh; /* Hauteur de l'écran entier */
+    display: flex; /* Utilisation du modèle flexbox pour le conteneur */
+    justify-content: center; /* Centrage horizontal des éléments */
+    align-items: center; /* Centrage vertical des éléments */
+    text-align: center; /* Texte centré */
+    color: white; /* Couleur du texte en blanc */
+    padding: 0 20px; /* Espacement intérieur horizontal */
+    animation: backgroundTransition 15s infinite; /* L'animation dure 15 secondes et se répète infiniment */
+}
+@keyframes backgroundTransition {
+    0% {
+        background-image: url('https://www.urbanflower.com.au/images/gallery/medium/cahheepmmw.jpg');
+    }
+    33% {
+        background-image: url('https://th.bing.com/th/id/OIP.LRIzUT--SiNOpN4_pEzPwAHaFS?rs=1&pid=ImgDetMain');
+    }
+    66% {
+        background-image: url('https://th.bing.com/th/id/R.eb696e7348b41569095be547bad99c99?rik=atdId7nkLxBNcQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-bpxwmo_hG1k%2fTtbP3HvrwSI%2fAAAAAAAABH4%2fB5aNsCLlT40%2fs1600%2fPurple-pink-bouquet-rose-anemone-freesia-lisianthus.jpg&ehk=26lN4YUAP8iiC54jncmnDQ7Rh6Kms0Tjedjv6RIflpk%3d&risl=&pid=ImgRaw&r=0');
+    }
+    100% {
+        background-image: url('https://th.bing.com/th/id/OIP.dq_B6wrMJx7fCKhmORfn1QHaE7?rs=1&pid=ImgDetMain');
+    }
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact .contactimage{
+    background: url('https://th.bing.com/th/id/R.d3e6760bbad25ed32c286872d42ccdd6?rik=7w6JzqZxUMtouA&pid=ImgRaw&r=0') no-repeat center center/cover; /* Image de fond centrée et couverte */
+    animation: contactTransition 15s infinite; /* L'animation dure 15 secondes et se répète infiniment */
+    height:400px;
+    width: 700px;
+}
+@keyframes contactTransition {
+    0% {
+        background-image: url('https://th.bing.com/th/id/OIP.R7Qj18CGlxwndl_mGxanYAAAAA?rs=1&pid=ImgDetMain');
+    }
+    33% {
+        background-image: url('https://th.bing.com/th/id/OIP.47H4Egp0ysSg0KpSX5kPZAAAAA?rs=1&pid=ImgDetMain');
+    }
+    66% {
+        background-image: url('https://th.bing.com/th/id/OIP.8UeDQPP6FYW0SRM8yUz3GAHaEK?rs=1&pid=ImgDetMain');
+    }
+    100% {
+        background-image: url('https://storage.canalblog.com/48/87/1459913/118502415_o.jpg');
+    }
+}
+.contact .contactdetail{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-left: 100px
+}
+.contact .contactdetail .B{
+    margin-bottom: 50px;
+}
+footer{
+    background-color:  #333; 
+    color: white;
+    padding: 40px; 
+    text-align: center; 
+    border-top: 1px solid #ddd;
+}
+.prin{
+    max-width: 1200px;
+    margin: auto;
+}
+.prin .princ{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.prin .princ .princi{
+    flex: 1; 
+    margin: 10px; 
+    min-width: 200px;
+}
+ul{
+    list-style-type: none; 
+    padding: 0;
+}
+.prin .princ .princi1{
+    flex: 1; 
+    margin: 10px; 
+    min-width: 200px;
+}
+.prin .princ1{
+    margin-top: 20px;
+}
+
+/* .test {
+    display: flex;
+    flex-direction: row;
+}
+
+.elmt {
+    width: 25%;
+}
+
+.elmt1{ background-color: #3498db}
+.elmt2{ background-color:#f46b30}
+.elmt3{ background-color:aquamarine} */
+
+/* Conteneur pour les images */
+
+.product-card:hover{
+    scale:1.1;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+    margin: 40px 0px 40px 0px;
+
+    /* border-radius: 20px; */
+ }
+
+.image-container{
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+    flex-direction: row  !important;
+    /* animation: bounce 2s infinite; */
+ }
